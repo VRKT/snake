@@ -17,8 +17,8 @@ namespace Snake
             new Settings();
 
             gameTimer.Interval = 1000 / Settings.Speed;
-            //gameTimer.Tick += UpdateScreen;
-            gameTimer.Tick += navigateToFood;
+            gameTimer.Tick += UpdateScreen;
+            //gameTimer.Tick += navigateToFood;
             gameTimer.Start();
 
             StartGame();
